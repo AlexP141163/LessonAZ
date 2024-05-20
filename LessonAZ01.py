@@ -4,10 +4,10 @@ df = pd.read_csv('cleaned.csv')
 df_dz = pd.read_csv('dz.csv')
 group = df_dz.groupby('City')['Salary'].mean()
 
-print(df.head())
+print(df.head())   # Вывод 5 строк:
 print('______________________________________')
-print(df.describe())
+print(df.describe())  # Вывод статистического описания:
 print('______________________________________')
-print(df.info())
+print(df.info())  # Вывод информации о данных:
 print('_____________________________________')
-print(group)
+print(group)   # Вывод средних зарплат по городам:
